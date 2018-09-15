@@ -144,7 +144,7 @@ contains(BITCOIN_NEED_QT_PLUGINS, 1) {
     QTPLUGIN += qcncodecs qjpcodecs qtwcodecs qkrcodecs qtaccessiblewidgets
 }
 
-INCLUDEPATH += src/leveldb/include src/leveldb/helpers
+INCLUDEPATH += $PWD/src/leveldb/include $PWD/src/leveldb/helpers
 LIBS += $$PWD/src/leveldb-win/libleveldb.a \
 	$$PWD/src/leveldb-win/libmemenv.a \
    	$$PWD/src/torlibs-win/libtor.a \
